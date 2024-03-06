@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="800" id="KGk-i7-Jjw" customClass="segundaViewController" customModule="MELLOOOO" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="496" height="800"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="496" height="800"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Avx-2a-GAH">
+                        <rect key="frame" x="40" y="41" width="416" height="35"/>
+                        <color key="backgroundColor" red="0.76767861319999997" green="0.68877163239999994" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="Pesquisar"/>
+                    </button>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aKd-aY-X3k">
+                        <rect key="frame" x="40" y="91" width="416" height="608"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="textColor" systemColor="labelColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYT-Lw-0LE">
+                        <rect key="frame" x="40" y="714" width="416" height="35"/>
+                        <color key="backgroundColor" red="0.76767861319999997" green="0.68877163239999994" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="Salva"/>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <color key="tintColor" systemColor="systemRedColor"/>
+                <constraints>
+                    <constraint firstItem="cYT-Lw-0LE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="Fgh-mo-p5Q"/>
+                    <constraint firstItem="Avx-2a-GAH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="Xm3-Bg-EUY"/>
+                    <constraint firstItem="aKd-aY-X3k" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="Y6b-dv-6CB"/>
+                    <constraint firstItem="cYT-Lw-0LE" firstAttribute="top" secondItem="aKd-aY-X3k" secondAttribute="bottom" constant="15" id="aZD-xK-dxV"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="cYT-Lw-0LE" secondAttribute="bottom" constant="40" id="ah2-Xc-TnV"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="cYT-Lw-0LE" secondAttribute="trailing" constant="20" id="gA5-gg-dYy"/>
+                    <constraint firstItem="Avx-2a-GAH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="30" id="iyd-Xy-xdp"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Avx-2a-GAH" secondAttribute="trailing" constant="20" id="om3-47-DXZ"/>
+                    <constraint firstItem="aKd-aY-X3k" firstAttribute="top" secondItem="Avx-2a-GAH" secondAttribute="bottom" constant="15" id="oz7-0M-s9Z"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="aKd-aY-X3k" secondAttribute="trailing" constant="20" id="voC-cZ-b3W"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="-4.5801526717557248" y="8.4507042253521139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
